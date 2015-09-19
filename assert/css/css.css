@@ -1,0 +1,134 @@
+body {
+    font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Hiragino Sans GB","Hiragino Sans GB W3",serif;
+    background: #FCFCFC;
+}
+
+.page-header {
+    margin: 0;
+}
+
+.logo {
+    width: 214px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.lg {
+    width: 214px;
+    height: 100px;
+}
+
+.breadcrumb {
+    font-size: 105%;
+    background: #FDDAAB;
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.nav-text {
+    display: inline;
+}
+
+ol {
+    display: inline;
+    margin-left: -5px;
+}
+
+.breadcrumb > li + li:before {
+    padding: 0;
+    content: '';
+}
+
+.btn-default {
+    margin-left: 10px;
+    padding: 0 10px;
+    border-radius: 4px;
+    line-height: 26px;
+}
+
+.btn-default:hover {
+    background: #FFFFFF;
+}
+
+.btn-default > a:link {
+    color: #000000;
+    text-decoration: none;
+}
+
+.btn-default > a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+.btn-default > a:hover {
+    color: #f39c12;
+    text-decoration: none;
+}
+
+.btn-default > a:active {
+    color: #f39c12;
+    text-decoration: none;
+}
+
+.main {
+    background-image: url("../img/background.jpg");
+    border-top:thin solid #FDDAAB;
+    border-bottom:thin solid #FDDAAB;
+    padding-bottom: 15px;
+}
+
+.content {
+    padding-top: 20px;
+}
+
+.content .row {
+    padding-bottom: 15px;
+}
+
+.content .last {
+    padding-bottom: 0;
+}
+
+.tag {
+    font-size: 110%;
+    text-align: right;
+    padding-right: 80px;
+}
+
+.footer {
+    padding-top: 20px;
+    font-size: small;
+    color: #95a5a6;
+}
+
+.footer a {
+    margin-right: 10px;
+}
+
+.footer a:link {
+    color: #bdc3c7;
+    text-decoration:none;
+}
+
+.footer a:active {
+    color: #bdc3c7;
+}
+
+.footer a:visited {
+    color:#bdc3c7;
+    text-decoration:none;
+}
+
+.footer a:hover {
+    color: #bdc3c7;
+    text-decoration:underline;
+}
+
+.footer .link {
+    padding-left: 100px;
+}
