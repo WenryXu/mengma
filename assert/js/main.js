@@ -2,7 +2,7 @@
  * Created by WenryXu on 15/2/4.
  */
 
-$('.ascii').one('mouseover', function () {
+$('.ascii span').one('mouseover', function () {
     $(this).zclip({
         path:  'assert/js/ZeroClipboard.swf',
         copy: function () {
