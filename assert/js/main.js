@@ -1,27 +1,20 @@
 /**
- * Created by WenryXu on 15/2/4.
+ * Created by WenryXu on 15/10/30.
  */
 
-$('.ascii span').one('mouseover', function () {
-    $(this).zclip({
-        path:  'assert/js/ZeroClipboard.swf',
-        copy: function () {
-            return $(this).html();
-        },
-        beforeCopy: null,
-        afterCopy: null,
-        clickAfter: true,
-        setHandCursor: true,
-        setCSSEffects: true
-    });
-});
-
-$('.ascii').on('mouseout', function () {
-    $(this).css('color', '');
-    $(this).css('margin-left', '');
-});
-
-$('.ascii').on('mouseenter', function () {
+$('.ascii span').on('mouseenter', function () {
     $(this).css('color', '#f39c12');
-    $(this).css('margin-left', '-5px');
+    $(this).parent('.ascii').css('margin-left', '-5px');
+});
+
+$('.ascii span').on('mouseout', function () {
+    $(this).css('color', '');
+    $(this).parent('.ascii').css('margin-left', '');
+});
+
+var clipboard = new Clipboard('.ascii span', {
+    text: function (trigger) {
+        $(trigger).css('color', '#40d47e');
+        return $(trigger).html();
+    }
 });

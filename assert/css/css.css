@@ -132,3 +132,7 @@ ol {
 .footer .link {
     padding-left: 100px;
 }
+
+.ascii {
+    cursor: pointer;
+}
