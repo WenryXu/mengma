@@ -1,6 +1,7 @@
 /**
  * Created by WenryXu on 15/10/30.
  */
+var drop;
 
 $('.ascii span').on('mouseenter', function () {
     $(this).css('color', '#f39c12');
@@ -17,4 +18,18 @@ var clipboard = new Clipboard('.ascii span', {
         $(trigger).css('color', '#40d47e');
         return $(trigger).html();
     }
+});
+
+clipboard.on('success', function (e) {
+    drop = new Drop({
+        target: e.trigger,
+        content: 'Copied!',
+        position: 'top center',
+        openOn: '',
+        classes: 'drop-theme-arrows-bounce-dark'
+    });
+    drop.open();
+    setTimeout(function () {
+        drop.close();
+    }, 1500);
 });
