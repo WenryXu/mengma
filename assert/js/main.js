@@ -31,5 +31,5 @@ clipboard.on('success', function (e) {
     drop.open();
     setTimeout(function () {
         drop.close();
-    }, 300);
+    }, 800);
 });
